@@ -1,0 +1,28 @@
+<?php
+define('BP',realpath($_SERVER['DOCUMENT_ROOT']));
+require_once(BP.'/system.php');
+// Zugriff testen und Fehler melden
+$tpl->setEmpty();
+$Access->control();
+
+$Updates = array();
+$nCount = 1;
+
+// Alle Links nach Alphabet auslesen und updaten
+$sSQL = "SELECT lnk_ID FROM tblink WHERE mnu_ID = ".page::menuID()." ORDER BY lnk_Name ASC";
+$nRes = $Conn->execute($sSQL);
+while ($row = $Conn->next($nRes)) {
+	$sUpdate = "UPDATE tblink SET lnk_Sortorder = $nCount WHERE lnk_ID = ".$row['lnk_ID'];
+	array_push($Updates,$sUpdate); $nCount++;
+}
+
+// Update Statements ausführen
+foreach ($Updates as $Update) {
+	$Conn->command($Update);
+}
+
+// Erfolg melden
+echo ' ...erledigt!';
+// System abschliessen
+$tpl->aC($out);
+require_once(BP.'/cleaner.php');

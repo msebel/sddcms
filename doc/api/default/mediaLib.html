@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class mediaLib</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class mediaLib</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bietet Funktionen für den Medienmanager.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_mediaManager---mediaLib.php.html">/mediaManager/mediaLib.php</a> (line <span class="field">6</span>)
+		</p>
+		
+				
+		<pre><a href="../default/commonModule.html">commonModule</a>
+   |
+   --mediaLib</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#checkElementAccess" title="details" class="method-name">checkElementAccess</a>
+											(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#dbSave" title="details" class="method-name">dbSave</a>
+											(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getExtension" title="details" class="method-name">getExtension</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getImageSize" title="details" class="method-name">getImageSize</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getSaveMethod" title="details" class="method-name">getSaveMethod</a>
+											(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">1</span>)
+									</div>
+																																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#isKnownExtension" title="details" class="method-name">isKnownExtension</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sExt</span>)
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#jsSave" title="details" class="method-name">jsSave</a>
+											(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+									</div>
+																																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#resizePicture" title="details" class="method-name">resizePicture</a>
+											(<span class="var-type"><a href="../default/imageManipulator.html">imageManipulator</a></span>&nbsp;<span class="var-name">&$Img</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nResizeValue</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nResizeType</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#resizePictureSave" title="details" class="method-name">resizePictureSave</a>
+											(<span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#updateElementData" title="details" class="method-name">updateElementData</a>
+											(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$sRedirect</span>)
+									</div>
+								
+																												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#editPicture" title="details" class="method-name">editPicture</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sName</span>)
+									</div>
+																																								<div class="method-definition">
+											<span class="method-result">integer,</span>
+										<a href="#getType" title="details" class="method-name">getType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#handleUpload" title="details" class="method-name">handleUpload</a>
+											(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#isLibraryElement" title="details" class="method-name">isLibraryElement</a>
+											(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadObjects" title="details" class="method-name">loadObjects</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#makeThumb" title="details" class="method-name">makeThumb</a>
+										()
+									</div>
+																																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setImageDimensions" title="details" class="method-name">setImageDimensions</a>
+											(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nType</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sPath</span>)
+									</div>
+																</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodcheckElementAccess" id="checkElementAccess"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method checkElementAccess</span> (line <span class="line-number">20</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checken ob Zugriff auf ein Element erlaubt ist</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkElementAccess
+		</span>
+					(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Referenz zum Options Objekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddbSave" id="dbSave"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method dbSave</span> (line <span class="line-number">218</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Element in der Datenbank speichern</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			dbSave
+		</span>
+					(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetExtension" id="getExtension"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getExtension</span> (line <span class="line-number">348</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generiert die Extension aus einem File</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Extension der Eingangsdatei</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getExtension
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, Eingangsdatei</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetImageSize" id="getImageSize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getImageSize</span> (line <span class="line-number">357</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">String für Bildgrösse bekommen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Bildgrösse als String (z.B. 800 x600)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getImageSize
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, Bilddatei</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSaveMethod" id="getSaveMethod"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getSaveMethod</span> (line <span class="line-number">149</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Art des Speicherns wählen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSaveMethod
+		</span>
+					(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">1</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">1</span><span class="var-description">: Javascript Funktion für db/js Speicherung</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisKnownExtension" id="isKnownExtension"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method isKnownExtension</span> (line <span class="line-number">335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Herausfinden, ob die Extension bekannt ist</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn Extension erlaubt ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isKnownExtension
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sExt</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sExt</span><span class="var-description">: sExt, Eingegebebe Extension</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodjsSave" id="jsSave"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method jsSave</span> (line <span class="line-number">165</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Element an den Window öffner per JS zurückgeben</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			jsSave
+		</span>
+					(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable für HTML output</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodresizePicture" id="resizePicture"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method resizePicture</span> (line <span class="line-number">418</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bild zuschneiden</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			resizePicture
+		</span>
+					(<span class="var-type"><a href="../default/imageManipulator.html">imageManipulator</a></span>&nbsp;<span class="var-name">&$Img</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nResizeValue</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nResizeType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/imageManipulator.html">imageManipulator</a></span>
+				<span class="var-name">&$Img</span><span class="var-description">: Img, Objekt zur Bildmanipulation</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nResizeValue</span><span class="var-description">: nResizeValue, Verkleinerungswert</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nResizeType</span><span class="var-description">: nResizeType, Resize Type aus Medienkonstanten</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodresizePictureSave" id="resizePictureSave"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method resizePictureSave</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Bild nachträglich bearbeiten</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			resizePictureSave
+		</span>
+					(<span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateElementData" id="updateElementData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method updateElementData</span> (line <span class="line-number">279</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Elementdaten updaten, wenn nicht editor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			updateElementData
+		</span>
+					(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$sRedirect</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sRedirect</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="methodeditPicture" id="editPicture"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">editPicture</span> (line <span class="line-number">384</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Bild bearbeiten</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			editPicture
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sName</span><span class="var-description">: sName, Name des zu verändernden Bildes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetType" id="getType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getType</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Type der Datei holen anhand Endung</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Konstantencode für Dateityp</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer,</span>
+		<span class="method-name">
+			getType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, Name des zu prüfenden Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhandleUpload" id="handleUpload"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">handleUpload</span> (line <span class="line-number">56</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Einen Upload bewerkstelligen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			handleUpload
+		</span>
+					(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisLibraryElement" id="isLibraryElement"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">isLibraryElement</span> (line <span class="line-number">463</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Eruieren ob ein Bibliothekselement hochgeladen wurde</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 1 wenn es ein Library Objekt ist</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			isLibraryElement
+		</span>
+					(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadObjects" id="loadObjects"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadObjects</span> (line <span class="line-number">11</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Objekte laden, überschrieben von Mutterklasse</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadObjects
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></dt>
+						<dd>Definiert die zu ladenden Objekte.</dd>
+					</dl>
+			
+	</div>
+<a name="methodmakeThumb" id="makeThumb"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">makeThumb</span> (line <span class="line-number">453</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bestimmen ob ein Thumb erstellt werden muss.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Antwort mit 1 oder 0 für die Datenbank</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			makeThumb
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetImageDimensions" id="setImageDimensions"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setImageDimensions</span> (line <span class="line-number">369</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Image Dimensionen in mediainstance speichern wenn Bild</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setImageDimensions
+		</span>
+					(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nType</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sPath</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nType</span><span class="var-description">: nType, Typ der Datei aus Medienkonstanten</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sPath</span><span class="var-description">: sPath, Bildpfad der zu prüfen ist</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../default/commonModule.html">commonModule</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../default/commonModule.html#method__construct">commonModule::__construct()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodcheckErrorSession">commonModule::checkErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodhasErrorSession">commonModule::hasErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodresetPaging">commonModule::resetPaging()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodsetErrorSession">commonModule::setErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodshowErrorSession">commonModule::showErrorSession()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:26 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

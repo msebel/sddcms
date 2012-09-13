@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class pageConfig</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class pageConfig</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konfigurations-Schnittstelle für Menupunkte.</p>
+<p class="description"><p>Bietet eine Schnittstelle um Menupunkte mit numerischen,  character oder grossen Textfeldern zu konfigurieren. Das  Erstellen, Speichern und Löschen übernimmt die Klasse</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_pageConfig---pageConfig.php.html">/pageConfig/pageConfig.php</a> (line <span class="field">9</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#GET_TYPE_EXCEPTION" title="details" class="const-name">GET_TYPE_EXCEPTION</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#GET_TYPE_REDIRECT" title="details" class="const-name">GET_TYPE_REDIRECT</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TYPE_NUMERIC" title="details" class="const-name">TYPE_NUMERIC</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TYPE_TEXT" title="details" class="const-name">TYPE_TEXT</a> = 					<span class="var-type"> 3</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TYPE_VALUE" title="details" class="const-name">TYPE_VALUE</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+									<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																				<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#get" title="details" class="method-name">get</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getByType" title="details" class="method-name">getByType</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nType</span>)
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getWithException" title="details" class="method-name">getWithException</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#hasConfig" title="details" class="method-name">hasConfig</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$Params</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#reset" title="details" class="method-name">reset</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#saveConfig" title="details" class="method-name">saveConfig</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#setConfig" title="details" class="method-name">setConfig</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$Value</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$Type</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$Name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$Config</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#stripSlashes" title="details" class="method-name">stripSlashes</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+									</div>
+								
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#formatValue" title="details" class="method-name">formatValue</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$Value</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">&$Type</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+									</div>
+																																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getColumn" title="details" class="method-name">getColumn</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nType</span>)
+									</div>
+																																																								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodget" id="get"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method get</span> (line <span class="line-number">51</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konfigurationsdaten für einen Menupunkt laden.</p>
+<p class="description"><p>Ist die Konfiguration schon geladen, wird diese  aus der Session geholt. Ist keine Konfiguration  vorhanden, geschieht ein error-redirect</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, ID des konfigurerten Menupunktes</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$Config</span><span class="var-description">: Config, leeres Array, wird mit Konfiguration befüllt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetByType" id="getByType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getByType</span> (line <span class="line-number">77</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konfigurationsdaten für einen Menupunkt laden.</p>
+<p class="description"><p>Ist die Konfiguration schon geladen, wird diese  aus der Session geholt.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getByType
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, ID des konfigurerten Menupunktes</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$Config</span><span class="var-description">: Config, leeres Array, wird mit Konfiguration befüllt</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nType</span><span class="var-description">: nType, Art der Fehlermeldung, wenn keine Konfiguration</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetWithException" id="getWithException"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getWithException</span> (line <span class="line-number">64</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konfigurationsdaten für einen Menupunkt laden.</p>
+<p class="description"><p>Ist die Konfiguration schon geladen, wird diese  aus der Session geholt. Ist keine Konfiguration  vorhanden, wird eine Exception geworfen</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getWithException
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, ID des konfigurerten Menupunktes</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$Config</span><span class="var-description">: Config, leeres Array, wird mit Konfiguration befüllt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhasConfig" id="hasConfig"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method hasConfig</span> (line <span class="line-number">220</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Schauen ob alle Parameter für die Konfiguration vorhanden sind.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasConfig
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$Params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, Menukonfiguration die zu prüfen ist</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$Params</span><span class="var-description">: Params, Anzahl Konfigurationen die das Menu haben muss</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreset" id="reset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method reset</span> (line <span class="line-number">137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konfigurationssession zurücksetzen.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, Menukonfiguration welche zurückzusetzen ist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveConfig" id="saveConfig"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method saveConfig</span> (line <span class="line-number">199</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gesamte Konfiguration in die Datenbank speichern.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			saveConfig
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, Menukonfiguration die zu speichern ist</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$Config</span><span class="var-description">: Config, Array, welches Konfiguration enthält</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetConfig" id="setConfig"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method setConfig</span> (line <span class="line-number">149</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Einen Konfigurationsparameter erstellen.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setConfig
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMenuID</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$Value</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$Type</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$Name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$Config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMenuID</span><span class="var-description">: nMenuID, ID des Menus, welches die Konfiguration bekommt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$Value</span><span class="var-description">: Value, Inhalt der Konfiguration</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$Type</span><span class="var-description">: Type, Art der Konfiguration (TYPE_ Konstanten!)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$Name</span><span class="var-description">: Config, Array welches Konfiguration enthält</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$Config</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstripSlashes" id="stripSlashes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method stripSlashes</span> (line <span class="line-number">124</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stripslashes auf die gesamte Konfiguration anwenden.</p>
+<p class="description"><p>Wichtig für Werte die aus der Session kommen. Es werden  nur Text und Value Werte gestript.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			stripSlashes
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$Config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$Config</span><span class="var-description">: Config, Array mit der Konfiguration</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="methodformatValue" id="formatValue"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">formatValue</span> (line <span class="line-number">236</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Value für SQL Formatieren und absichern</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			formatValue
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$Value</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">&$Type</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">&$Value</span><span class="var-description">: Value, Inhalt der zu sichernden Konfiguration</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">&$Type</span><span class="var-description">: Type, Art der Konfiguration (TYPE_ Konstanten!)</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetColumn" id="getColumn"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getColumn</span> (line <span class="line-number">250</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Feldnamen herausfinden anhand Typ.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name des entsprechenden Datenbankfeldes</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getColumn
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nType</span><span class="var-description">: nType, Art der Konfiguration (TYPE_ Konstanten!)</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constGET_TYPE_EXCEPTION" id="GET_TYPE_EXCEPTION"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">GET_TYPE_EXCEPTION</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Option für das laden der Konfiguration.</p>
+<p class="description"><p>Diese option wirft eine Exception, wenn  die Konfiguration nicht geladen werden kann.</p></p>
+	
+	
+</div>
+<a name="constGET_TYPE_REDIRECT" id="GET_TYPE_REDIRECT"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">GET_TYPE_REDIRECT</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Option für das laden der Konfiguration.</p>
+<p class="description"><p>Diese option bewirkt ein error Redirect, wenn  die Konfiguration nicht geladen werden kann.</p></p>
+	
+	
+</div>
+<a name="constTYPE_NUMERIC" id="TYPE_NUMERIC"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TYPE_NUMERIC</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">20</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Typ für numerischen Wert</p>
+	
+	
+</div>
+<a name="constTYPE_TEXT" id="TYPE_TEXT"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TYPE_TEXT</span>
+			 = <span class="const-default"> 3</span>
+			(line <span class="line-number">25</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Typ für langen Text, Textfeld</p>
+	
+	
+</div>
+<a name="constTYPE_VALUE" id="TYPE_VALUE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TYPE_VALUE</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">15</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Typ für kurzen String Varchar(255)</p>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:26 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

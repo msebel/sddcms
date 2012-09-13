@@ -1,0 +1,17 @@
+<div id="divCartContent">
+    <h1>Warenkorb</h1>
+    <p class="cShopText">
+    Sie befinden sich nun im Warenkorb, verwenden Sie die Auswahl unter der Liste
+	um den Bestellvorgang fortzusetzen oder weiter einzukaufen.
+    </p>
+	<span class="cShopError">{CART_MESSAGE}</span>
+	<form action="cart.php?id={MENU_ID}" method="post">
+	{CART_CONTENT}
+	<br>
+	<div id="cartMenuButtons">
+		<input type="submit" name="back" value="Zurück" class="cButton" id="cartMenuBackButton">
+		<input type="submit" name="refresh" value="Aktualisieren" class="cButton" id="cartMenuRefreshButton">
+		<input type="submit" name="confirm" value="Weiter in der Bestellung" class="cButton" id="cartMenuConfirmButton">
+	</div>
+	</form>
+</div>

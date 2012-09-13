@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class menu</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class menu</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Diese Klasse stellt grundlegende Menufunktionen.</p>
+<p class="description"><p>Wird verwendet zum darstellen und verarbeiten des Menus.  Eine Instanz $Menu wird automatisch erstellt und ist  im globalen Scope jederzeit verfügbar</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_core---menu.php.html">/core/menu.php</a> (line <span class="field">9</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<span class="var-type"><a href="../default/access.html">access</a></span>
+					<a href="#$Access" title="details" class="var-name">$Access</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+					<a href="#$Conn" title="details" class="var-name">$Conn</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>
+					<a href="#$CurrentMenu" title="details" class="var-name">$CurrentMenu</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$menuObjects" title="details" class="var-name">$menuObjects</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../default/menuTypes.html">menuTypes</a></span>
+					<a href="#$Menutypes" title="details" class="var-name">$Menutypes</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																				
+												<div class="method-definition">
+											<span class="method-result">menu</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"><a href="../default/access.html">access</a></span>&nbsp;<span class="var-name">&$Access</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#checkHierarchy" title="details" class="method-name">checkHierarchy</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$menuObject</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCustomMenu" title="details" class="method-name">getCustomMenu</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$sHtml</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getMenu" title="details" class="method-name">getMenu</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getMenuObjects" title="details" class="method-name">getMenuObjects</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSelectOptions" title="details" class="method-name">getSelectOptions</a>
+											([<span class="var-type">integer</span>&nbsp;<span class="var-name">$sSelected</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#isSuperior" title="details" class="method-name">isSuperior</a>
+											(<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>&nbsp;<span class="var-name">&$menuChecked</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadAllMenuObjects" title="details" class="method-name">loadAllMenuObjects</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sParent</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadMenuObjects" title="details" class="method-name">loadMenuObjects</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sParent</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#reset" title="details" class="method-name">reset</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Access" id="$Access"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../default/access.html">access</a></span>
+			<span class="var-name">$Access</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Referenz zum Zugriffsobjekt $Access</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Conn" id="$Conn"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+			<span class="var-name">$Conn</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">24</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Referenz zum Datenbankobjekt $Conn</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$CurrentMenu" id="$CurrentMenu"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>
+			<span class="var-name">$CurrentMenu</span>
+						(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Referenz aus dem menuObjects array und repräsentiert das selektierte Menu</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$menuObjects" id="$menuObjects"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$menuObjects</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">14</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Menuobjekte, array aus instanten von menuObject</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Menutypes" id="$Menutypes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../default/menuTypes.html">menuTypes</a></span>
+			<span class="var-name">$Menutypes</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Objekt, welches die Verarbeitung von Menutypen übernimmt</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">42</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konstruktor, welcher alle Objekte lädt.</p>
+<p class="description"><p>Das Menu wird nur beim ersten mal geladen und ist dann in der Session gelagert</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">menu</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"><a href="../default/access.html">access</a></span>&nbsp;<span class="var-name">&$Access</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/access.html">access</a></span>
+				<span class="var-name">&$Access</span><span class="var-description">: Access, Referenz zum Zugriffsobjekt</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckHierarchy" id="checkHierarchy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkHierarchy</span> (line <span class="line-number">221</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prüft ob das Menu Aufgrund der Hierarchie angezeigt wird.</p>
+<p class="description"><p>Die Funktion geht davon aus, dass der Menupunkt nicht anzeigbar ist  Dies wird aber umgekehrt/ermöglicht wenn: <ul><li>Der gecheckte Menupunkt den gleichen Parent wie der aktuelle hat</li><li>Der gecheckte Menupunkt ein überobjekt des aktuellen ist</li><li>Der gecheckte Menupunkt in der ersten Hierarchie (0) ist</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true = anzeigbar</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			checkHierarchy
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$menuObject</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$menuObject</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetCustomMenu" id="getCustomMenu"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCustomMenu</span> (line <span class="line-number">260</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Spezielle HTML Codes für das Menu.</p>
+<p class="description"><p>Die bestehenden Codes im $Html Array werden durch vorhandene Options ersetzt</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCustomMenu
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$sHtml</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$sHtml</span><span class="var-description">: Html, Array der menu/item start/end codes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMenu" id="getMenu"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMenu</span> (line <span class="line-number">137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Das Menu als HTML laden.</p>
+<p class="description"><p>Hier werden auch die Optionen für individuelle menu-HTML-Daten geladen</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> HTML Code mit dem Menu drin</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMenu
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMenuObjects" id="getMenuObjects"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMenuObjects</span> (line <span class="line-number">330</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array der Menuobjekte für spezielle Verarbeitung zurückgeben.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMenuObjects
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSelectOptions" id="getSelectOptions"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSelectOptions</span> (line <span class="line-number">273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Das Menu in Form von select Options bekommen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> &lt;options&gt; HTML Code für Selectbox output</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectOptions
+		</span>
+					([<span class="var-type">integer</span>&nbsp;<span class="var-name">$sSelected</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, ID des selektierten Menupunktes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisSuperior" id="isSuperior"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isSuperior</span> (line <span class="line-number">299</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prüft, ob das zu checkende Element ein Übergeordnetes</p>
+<p class="description"><p>Element des aktuell sichtbaren Menus ist</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isSuperior
+		</span>
+					(<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>&nbsp;<span class="var-name">&$menuChecked</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>
+				<span class="var-name">&$menuChecked</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadAllMenuObjects" id="loadAllMenuObjects"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadAllMenuObjects</span> (line <span class="line-number">69</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alle Menuobjekte laden (für die Menuverwaltung).</p>
+<p class="description"><p>Zugriffe und inaktive/unsichtbare Menus werden nicht beachtet</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadAllMenuObjects
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sParent</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sParent</span><span class="var-description">: sParent, Übergeordneter Item String</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadMenuObjects" id="loadMenuObjects"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadMenuObjects</span> (line <span class="line-number">96</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Menuobjekte laden unter beachtung von Zugriffen und inaktiven Menus.</p>
+<p class="description"><p>Zudem werden untergeordnete Punkte nur geladen wenn, das übergeordnete  Menu auch ausgewählt wurden (in irgend einer Hierarchie)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadMenuObjects
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sParent</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sParent</span><span class="var-description">: sParent, Übergeordneter Item String</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreset" id="reset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">reset</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Menuobjekte löschen und das menuObjects array neu initialisieren.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:26 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

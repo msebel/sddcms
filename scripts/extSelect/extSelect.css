@@ -1,0 +1,17 @@
+.extSelectSelection {
+	background-color:#ff9f00;
+}
+.extSelectUnselect {
+	background-color:#f9f9f9;
+}
+.newTextCss {
+	width:170px;
+	border:1px solid #aaa;
+	border-top:0px none;
+	padding-left:3px;
+	background-color:#f9f9f9;
+}
+.extSelectSelector {
+	width:170px;
+	border:1px solid #aaa;
+}

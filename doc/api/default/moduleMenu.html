@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class moduleMenu</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class moduleMenu</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Basisklasse für Admin/View Module.</p>
+<p class="description"><p>Für den standard Code von sddCMS. Für individuelle  Module ist die additionalModule Klasse (eingeschränkter) zu nutzen.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_library---menu---menu.php.html">/library/menu/menu.php</a> (line <span class="field">3</span>)
+		</p>
+		
+				
+		<pre><a href="../default/commonModule.html">commonModule</a>
+   |
+   --moduleMenu</pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#MAX_CHARS" title="details" class="const-name">MAX_CHARS</a> = 					<span class="var-type"> 36</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#MAX_HIERARCHY" title="details" class="const-name">MAX_HIERARCHY</a> = 					<span class="var-type"> 7</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#MENU_ADDITION" title="details" class="const-name">MENU_ADDITION</a> = 					<span class="var-type"> 10</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#MENU_OFFSET" title="details" class="const-name">MENU_OFFSET</a> = 					<span class="var-type"> 20</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+									<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMenu" title="details" class="method-name">addMenu</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#checkEditable" title="details" class="method-name">checkEditable</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#checkHierarchy" title="details" class="method-name">checkHierarchy</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$menuObject</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$currentMenu</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#deleteMenu" title="details" class="method-name">deleteMenu</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#deleteMenuImages" title="details" class="method-name">deleteMenuImages</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCurrentMenu" title="details" class="method-name">getCurrentMenu</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$menuObjects</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCustomTypes" title="details" class="method-name">getCustomTypes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nType</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getGlobalTypes" title="details" class="method-name">getGlobalTypes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nType</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getMenuInfo" title="details" class="method-name">getMenuInfo</a>
+											(<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>&nbsp;<span class="var-name">&$menuObject</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getParentDropdown" title="details" class="method-name">getParentDropdown</a>
+											(<span class="var-type"><a href="../default/menu.html">menu</a></span>&nbsp;<span class="var-name">&$menu</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nParentItem</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getPictureState" title="details" class="method-name">getPictureState</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getTeaserOptions" title="details" class="method-name">getTeaserOptions</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#isLastItem" title="details" class="method-name">isLastItem</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nMenuID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadData" title="details" class="method-name">loadData</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nMenuID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadObjects" title="details" class="method-name">loadObjects</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#saveMenuProperties" title="details" class="method-name">saveMenuProperties</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#uploadMenuImages" title="details" class="method-name">uploadMenuImages</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddMenu" id="addMenu"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMenu</span> (line <span class="line-number">28</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMenu
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheckEditable" id="checkEditable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkEditable</span> (line <span class="line-number">148</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkEditable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheckHierarchy" id="checkHierarchy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkHierarchy</span> (line <span class="line-number">244</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkHierarchy
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$menuObject</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$currentMenu</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$menuObject</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$currentMenu</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteMenu" id="deleteMenu"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteMenu</span> (line <span class="line-number">103</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteMenu
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddeleteMenuImages" id="deleteMenuImages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteMenuImages</span> (line <span class="line-number">318</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteMenuImages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCurrentMenu" id="getCurrentMenu"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCurrentMenu</span> (line <span class="line-number">227</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCurrentMenu
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$menuObjects</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$menuObjects</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetCustomTypes" id="getCustomTypes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCustomTypes</span> (line <span class="line-number">209</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCustomTypes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetGlobalTypes" id="getGlobalTypes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGlobalTypes</span> (line <span class="line-number">167</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getGlobalTypes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMenuInfo" id="getMenuInfo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMenuInfo</span> (line <span class="line-number">129</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMenuInfo
+		</span>
+					(<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>&nbsp;<span class="var-name">&$menuObject</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/menuObject.html">menuObject</a></span>
+				<span class="var-name">&$menuObject</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetParentDropdown" id="getParentDropdown"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getParentDropdown</span> (line <span class="line-number">436</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getParentDropdown
+		</span>
+					(<span class="var-type"><a href="../default/menu.html">menu</a></span>&nbsp;<span class="var-name">&$menu</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nParentItem</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/menu.html">menu</a></span>
+				<span class="var-name">&$menu</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nParentItem</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetPictureState" id="getPictureState"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPictureState</span> (line <span class="line-number">276</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getPictureState
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTeaserOptions" id="getTeaserOptions"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTeaserOptions</span> (line <span class="line-number">195</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getTeaserOptions
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisLastItem" id="isLastItem"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isLastItem</span> (line <span class="line-number">119</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isLastItem
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nMenuID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nMenuID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadData" id="loadData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadData</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadData
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nMenuID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nMenuID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadObjects" id="loadObjects"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadObjects</span> (line <span class="line-number">22</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadObjects
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></dt>
+						<dd>Definiert die zu ladenden Objekte.</dd>
+					</dl>
+			
+	</div>
+<a name="methodsaveMenuProperties" id="saveMenuProperties"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveMenuProperties</span> (line <span class="line-number">52</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			saveMenuProperties
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoduploadMenuImages" id="uploadMenuImages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">uploadMenuImages</span> (line <span class="line-number">336</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			uploadMenuImages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../default/commonModule.html">commonModule</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../default/commonModule.html#method__construct">commonModule::__construct()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodcheckErrorSession">commonModule::checkErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodhasErrorSession">commonModule::hasErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodresetPaging">commonModule::resetPaging()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodsetErrorSession">commonModule::setErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodshowErrorSession">commonModule::showErrorSession()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constMAX_CHARS" id="MAX_CHARS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">MAX_CHARS</span>
+			 = <span class="const-default"> 36</span>
+			(line <span class="line-number">6</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constMAX_HIERARCHY" id="MAX_HIERARCHY"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">MAX_HIERARCHY</span>
+			 = <span class="const-default"> 7</span>
+			(line <span class="line-number">5</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constMENU_ADDITION" id="MENU_ADDITION"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">MENU_ADDITION</span>
+			 = <span class="const-default"> 10</span>
+			(line <span class="line-number">8</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constMENU_OFFSET" id="MENU_OFFSET"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">MENU_OFFSET</span>
+			 = <span class="const-default"> 20</span>
+			(line <span class="line-number">7</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:40:01 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

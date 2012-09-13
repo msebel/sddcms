@@ -1,0 +1,56 @@
+<h1>Profildaten bearbeiten</h1>
+<p>
+	Hier können Sie Ihr Passwort und Ihre Adressen verwalten.
+</p>
+<span class="cShopError">{PASSWORD_MESSAGE}</span>
+<form action="user.php?id={MENU_ID}&save" method="post">
+	<table width="100%" border="0" cellspacing="0" cellpadding="2">
+		<tr>
+			<td>Benutzername:</td>
+			<td>
+				<input type="text" disabled="disabled" value="{USER_NAME}" class="cInputShopCity">
+			</td>
+		</tr>
+		<tr>
+			<td>Neues Passwort:</td>
+			<td>
+				<input type="password" name="password1" class="cInputShopCity">
+			</td>
+		</tr>
+		<tr>
+			<td>Wiederholen:</td>
+			<td>
+				<input type="password" name="password2" class="cInputShopCity">
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<input type="submit" class="cButton" value="Speichern">
+			</td>
+		</tr>
+	</table>
+</form>
+<br>
+<h2>Adressen</h2>
+<p>
+	Sie sehen hier Ihre Adressen. Sie können eine Auswählen und
+	danach das "Bearbeiten"-Icon daneben anklicken um die Adresse anzupassen. Sie
+	können auf eine neue
+	<a href="address.php?id={MENU_ID}&type={TYPE_DELIVERY}">Liefer</a>- oder
+	<a href="address.php?id={MENU_ID}&type={TYPE_BILL}">Rechnungsadresse</a> erstellen.
+</p>
+<h2>Rechnungsadresse</h2>
+<p>
+{BILLING_ADDRESSES}
+<a href="javascript:document.location = 'address.php?id={MENU_ID}&address=' + $F('billing');">
+<img src="/images/icons/book_edit.png" border="0"
+	 alt="Adresse bearbeiten" title="Adresse bearbeiten"></a>
+</p>
+<h2>Lieferadresse</h2>
+<p>
+{DELIVERY_ADDRESSES}
+<a href="javascript:document.location = 'address.php?id={MENU_ID}&address=' + $F('delivery');">
+<img src="/images/icons/book_edit.png" border="0"
+	 alt="Adresse bearbeiten" title="Adresse bearbeiten"></a>
+</p>

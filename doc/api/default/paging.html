@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class paging</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class paging</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Klasse die eine Verteilung von Records auf mehrere Seiten anbietet.</p>
+<p class="description"><p>Die Seitenzahl wird seit sddCMS 2.0 in der Session gespeichert, sodass  man nicht mehr für alle Links den 'page' Parameter führen muss.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_paging---paging.php.html">/paging/paging.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																<div class="var-title">
+					<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+					<a href="#$Conn" title="details" class="var-name">$Conn</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$HTML" title="details" class="var-name">$HTML</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Limit" title="details" class="var-name">$Limit</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Page" title="details" class="var-name">$Page</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Pages" title="details" class="var-name">$Pages</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$Path" title="details" class="var-name">$Path</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$Records" title="details" class="var-name">$Records</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$sSQL" title="details" class="var-name">$sSQL</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																												
+												<div class="method-definition">
+											<span class="method-result">paging</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$Path</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#calcPages" title="details" class="method-name">calcPages</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#generateHtml" title="details" class="method-name">generateHtml</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$arrPages</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getHtml" title="details" class="method-name">getHtml</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getPageArray" title="details" class="method-name">getPageArray</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$arrPages</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#getSessionPaging" title="details" class="method-name">getSessionPaging</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSQL" title="details" class="method-name">getSQL</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSQL" title="details" class="method-name">setSQL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sSQL</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#start" title="details" class="method-name">start</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sSQL</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$nLimit</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Preserve</span> = <span class="var-default">true</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$Conn" id="$Conn"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+			<span class="var-name">$Conn</span>
+						(line <span class="line-number">14</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Referenz zum Datenbankobjekt</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$HTML" id="$HTML"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$HTML</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML Code für Navigation</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Limit" id="$Limit"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Limit</span>
+			 = <span class="var-default"> 10</span>			(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Anzahl Records pro Seite</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Page" id="$Page"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Page</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number">24</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Aktuell angezeigte Seite</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Pages" id="$Pages"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Pages</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Anzahl Seiten für das Recordset</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Path" id="$Path"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$Path</span>
+						(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Pfad für die Seiten-Wechsel-Links</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Records" id="$Records"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$Records</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Anzahl Records im verteilten Recordset</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sSQL" id="$sSQL"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$sSQL</span>
+						(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Grundlegende SQL Abfrage</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">56</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Paging Objekt erstellen.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">paging</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$Path</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Path</span><span class="var-description">: Path, Pfad für die Seiten-Wechsel-Links</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcalcPages" id="calcPages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">calcPages</span> (line <span class="line-number">132</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Berechnet anhand des Limits und den Datensätzen die Anzahl der Seiten.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			calcPages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgenerateHtml" id="generateHtml"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">generateHtml</span> (line <span class="line-number">223</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generiert HTML Code für das Paging.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> HTML Code für Navigation</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			generateHtml
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$arrPages</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$arrPages</span><span class="var-description">: arrPages, Array mit Seitenzahlen drin</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetHtml" id="getHtml"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHtml</span> (line <span class="line-number">148</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML Des Paging zurückgeben</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> HTML Code für Seitennavigation</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getHtml
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPageArray" id="getPageArray"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPageArray</span> (line <span class="line-number">191</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Definiert die zu bearbeitenden Seiten.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> arrPages, Referenziertes Array mit Seitenzahlen</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getPageArray
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$arrPages</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$arrPages</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSessionPaging" id="getSessionPaging"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSessionPaging</span> (line <span class="line-number">104</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Page vom Paging aus der Session holen.</p>
+<p class="description"><p>Alternativ wird versucht die Seite vom 'page' Parameter zu lesen</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn das Paging aus der Session geholt wird</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			getSessionPaging
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSQL" id="getSQL"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSQL</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SQL String zurückgeben</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Verarbeitetes SQL Statement</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSQL
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetSQL" id="setSQL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSQL</span> (line <span class="line-number">120</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SQL Statement mit LIMIT generieren.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSQL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sSQL</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSQL</span><span class="var-description">: sSQL, Datenbank Abfrage</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstart" id="start"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">start</span> (line <span class="line-number">70</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Paging starten.</p>
+<p class="description"><p>Dem SQL String wird das LIMIT Wort angehängt, vorher Wird die  Gesamtzahl der Records gezählt und in die Session gespeichert</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Bearbeitetes SQL Statement für die effektive Abfrage</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			start
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sSQL</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$nLimit</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Preserve</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSQL</span><span class="var-description">: sSQL, Zu verteilende SQL Abfrage</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nLimit</span><span class="var-description">: nLimit, Anzahl Records pro Seite</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$Preserve</span><span class="var-description">: Preserve, Wenn False, werden Rows immer neu gezählt</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:26 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

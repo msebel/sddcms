@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class sqlOps</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class sqlOps</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bietet Validierungs -/ Einschränkungsmethoden für SQL Statements.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_sqlOps---sqlOps.php.html">/sqlOps/sqlOps.php</a> (line <span class="field">6</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#constrainSqlDate" title="details" class="method-name">constrainSqlDate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sSQL</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sStartDate</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sEndDate</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sField</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDivider</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#constrainYear" title="details" class="method-name">constrainYear</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sSQL</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nYear</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sField</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDivider</span>)
+									</div>
+								
+																				</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodconstrainSqlDate" id="constrainSqlDate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method constrainSqlDate</span> (line <span class="line-number">38</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Auf ein SQL konformes Datum einschränken.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			constrainSqlDate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sSQL</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sStartDate</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sEndDate</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sField</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDivider</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sSQL</span><span class="var-description">: sSQL, zu bearbeitender SQL String</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sStartDate</span><span class="var-description">: sStartDate, einzuschränkendes Startdatum</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sEndDate</span><span class="var-description">: sEndDate, einzuschränkendes Enddatum</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sField</span><span class="var-description">: sField, Name des einzuschränkenden Feldes</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sDivider</span><span class="var-description">: sDivider, Code vor der Einschränkung (OR, AND etc.)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconstrainYear" id="constrainYear"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method constrainYear</span> (line <span class="line-number">15</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Auf ein bestimmtes Jahr einschränken.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			constrainYear
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sSQL</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nYear</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sField</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDivider</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sSQL</span><span class="var-description">: sSQL, zu bearbeitender SQL String</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nYear</span><span class="var-description">: nYear, einzuschränkendes Jahr</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sField</span><span class="var-description">: sField, Name des einzuschränkenden Feldes</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sDivider</span><span class="var-description">: sDivider, Code vor der Einschränkung (OR, AND etc.)</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:27 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

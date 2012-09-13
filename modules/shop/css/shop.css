@@ -1,0 +1,175 @@
+.cSALentry {
+    margin:0px 0px 5px 0px;
+    padding:0px 0px 10px 0px;
+    border-top:1px dotted #000;
+    overflow:auto;
+    clear:both;
+}
+.cSALentryH2 {
+    font-size:14px;
+}
+.cSALentryImage {
+    float:left;
+    clear:left;
+    margin:0px 15px 5px 0px;
+}
+.cSALentryImage a img {
+    border:0px none;
+}
+.cSALentryPrice, .cSALentryNew {
+    float:right;
+    border:1px dotted #00AA00;
+    padding:3px;
+    margin:0px 0px 5px 5px;
+    font-weight:bold;
+    font-size:13px;
+}
+.cSALentryPrice {
+    color:#336633;
+}
+.cSALentryNew {
+    color:#aa0000;
+}
+.cSALentryText {
+    
+}
+.cSALentryCart {
+    float:left;
+    clear:both;
+}
+.cSALentryInput {
+    width:40px;
+    height:12px;
+}
+.cArtEntry {
+    margin:0px 0px 5px 0px;
+    padding:0px 0px 10px 0px;
+    border-bottom:1px dotted #000;
+    overflow:auto;
+}
+.cArtEntryH2 {
+    font-size:14px;
+}
+.cArtEntryImage {
+    float:left;
+    clear:left;
+    margin:0px 0px 5px 0px;
+    width:260px;
+}
+.cArtEntryImage a img {
+    border:0px none;
+}
+.cArtEntryPrice {
+    float:right;
+    border:1px dotted #00AA00;
+    padding:3px;
+    margin:0px 0px 5px 5px;
+    font-weight:bold;
+    font-size:13px;
+    color:#336633;
+}
+.cArtEntryText {
+    clear:right;
+}
+.cArtEntryCart {
+    float:left;
+    clear:both;
+}
+.cArtEntryInput {
+    width:40px;
+    height:12px;
+}
+.cShopArticleImageSmall {
+    float:left;
+    margin:0px 4px 3px 0px;
+}
+.cExtPropTable {
+    width:100%;
+    margin:5px 0px 10px 0px
+}
+.cExtPropTable th {
+    text-align:left;
+    font-weight:bold;
+    height:30px;
+    padding:2px;
+}
+.cExtPropName {
+    width:120px;
+    padding:2px;
+}
+.cExtPropValue {
+    padding:2px;
+}
+.cStartArticleSearch {
+    float:right;
+    clear:right;
+    margin:0px 0px 10px 0px;
+}
+.cStartGroupSearch {
+    float:left;
+    clear:left;
+    margin:0px 0px 10px 0px;
+}
+.cStartArticleSearch h2,.cStartGroupSearch h2 {
+    font-size:12px;
+    color:#555;
+    margin:0px 0px 5px 0px;
+}
+.cStartSearchField, .cStartGroupField {
+    width:140px;
+}
+.cSearchResultNothing {
+    border-top:1px solid #aaa;
+    padding:5px 0px 5px 0px;
+    margin:20px 0px 0px 0px;
+    font-style:italic;
+}
+.tabRowTotal td {
+	border-top:1px solid #bbb;
+	font-weight:bold;
+}
+#cartMenuButtons {
+	overflow:auto;
+	float:right;
+}
+.cInputShopLogin {
+	width:250px;
+}
+.cInputShopLoginPlz {
+	width:60px;
+}
+.cInputShopLoginCity {
+	width:180px;
+}
+.cShopError {
+	font-weight:bold;
+	color:#aa0000;
+}
+.cPaymentAddress {
+	width:400px;
+}
+.shopTabRowDark {
+	background-color:#e5e5e5;
+}
+.shopTabRowLight {
+	background-color:#efefef;
+}
+.shopTabRowHead {
+	background-color:#dddddd;
+	font-weight:bold;
+}
+.cGroupImg {
+	border:1px solid #555;
+	margin:5px 5px 5px 0px;
+	float:left;
+}
+.cArticleGroup {
+	width:100%;
+	float:left;
+	margin-top:10px;
+}
+.cListSubgroups {
+	width:100%;
+	overflow:auto;
+	margin-bottom:20px;
+}

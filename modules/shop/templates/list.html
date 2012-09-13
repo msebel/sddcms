@@ -1,0 +1,27 @@
+<div id="divAllGroups">
+    {SHOP_TITLE}
+    <p class="cShopText">
+    Sie befinden sich nun im Onlineshop. Wir wünschen Ihnen viel Spass beim suchen
+    und finden unserer Artikel. Wenden Sie sich einfach an uns, wenn Fragen auftauchen.
+    </p>
+	<div class="cStartGroupSearch">
+		<h2>Artikelgruppe wählen</h2>
+		<form action="group.php" method="get">
+			<input type="hidden" name="id" value="{MENU_ID}">
+			{GROUP_SEARCH}
+		</form>
+	</div>
+    <div class="cStartArticleSearch">
+        <h2>Artikel suchen</h2>
+        <form action="{SEARCH_LINK}" method="post">
+            <input type="text" name="search" class="cStartSearchField">
+            <input type="submit" name="cmdSearch" value="Suchen" class="cButton">
+        </form>
+    </div>
+    {PAGING}
+    {ARTICLE_LIST}
+    {PAGING}
+</div>
+<script type="text/javascript">
+	new ArticleSizeController("cArticleSizeSelect");
+</script>

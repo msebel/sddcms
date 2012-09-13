@@ -1,0 +1,70 @@
+h1 {
+	font-size:16px;
+	color:#8FB387;
+	letter-spacing:1px;
+	font-family:helvetica,verdana,arial,courier;
+	font-weight:bold;
+	margin:0px;
+	padding-bottom:3px;
+	border-bottom:2px dotted #77A16D;
+}
+h2 {
+	font-size:14px;
+	color:#77A16D;
+	letter-spacing:1px;
+	font-family:helvetica,verdana,arial,courier;
+	font-weight:bold;
+	margin:0px;
+	padding-bottom:3px;
+	border-bottom:2px dotted #77A16D;
+}
+h3 {
+	font-size:12px;
+	color:#619056;
+	letter-spacing:1px;
+	font-family:helvetica,verdana,arial,courier;
+	font-weight:bold;
+	margin:0px;
+	padding-bottom:3px;
+	border-bottom:2px dotted #77A16D;
+}
+body {
+	font-family:helvetica,verdana,arial,courier;
+	font-size:13px;
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+	color:#000;
+	background-image:url('bg.png');
+	height: 100%;
+}
+a,a:link,a:visited,a:active { 
+	text-decoration:underline; 
+	font-weight:bold; 
+	color:#000; 
+}
+
+a:hover { 
+	text-decoration:none;
+	font-weight:bold; 
+	color:#444; 
+}
+hr { 
+	background-color:#aaa;
+	color:#aaa;	
+	height:1px;	
+	line-height:20px;	
+	border:0px; 
+}
+p {
+	font-family:helvetica,verdana,arial,courier;
+	font-size:13px;
+}
+p.code {
+	width:90%;
+	font-family:courier new, lucida console;
+	font-size:11px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+}

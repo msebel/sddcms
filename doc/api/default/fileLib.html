@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class fileLib</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class fileLib</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bietet Funktionen um mit Dateien zu arbeiten.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_mediaManager---fileLib.php.html">/mediaManager/fileLib.php</a> (line <span class="field">6</span>)
+		</p>
+		
+				
+		<pre><a href="../default/commonModule.html">commonModule</a>
+   |
+   --fileLib</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+												<div class="var-title">
+					static <span class="var-type">string</span>
+					<a href="#$SaveMethod" title="details" class="var-name">$SaveMethod</a>
+				</div>
+																							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#copyXLImage" title="details" class="method-name">copyXLImage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#deleteFile" title="details" class="method-name">deleteFile</a>
+											(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#getFileList" title="details" class="method-name">getFileList</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nElementID</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getImagePath" title="details" class="method-name">getImagePath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$File</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$getXL</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getNonXLVersion" title="details" class="method-name">getNonXLVersion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getSelectedFile" title="details" class="method-name">getSelectedFile</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$arrFiles</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getXLFileHtml" title="details" class="method-name">getXLFileHtml</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$File</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getXLVersion" title="details" class="method-name">getXLVersion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#hasXLImage" title="details" class="method-name">hasXLImage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#isImage" title="details" class="method-name">isImage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#isValidPath" title="details" class="method-name">isValidPath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">1</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#isXLImage" title="details" class="method-name">isXLImage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#sanitizeFilename" title="details" class="method-name">sanitizeFilename</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sName</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#showFiles" title="details" class="method-name">showFiles</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$arrFiles</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#showFlashFile" title="details" class="method-name">showFlashFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#showFlashVideo" title="details" class="method-name">showFlashVideo</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#showImageFile" title="details" class="method-name">showImageFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#showMusicFile" title="details" class="method-name">showMusicFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#showOtherFile" title="details" class="method-name">showOtherFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#showVideoFile" title="details" class="method-name">showVideoFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#unzipFile" title="details" class="method-name">unzipFile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sFolder</span>)
+									</div>
+								
+																																																																																																												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadObjects" title="details" class="method-name">loadObjects</a>
+										()
+									</div>
+																																																																																</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$SaveMethod" id="$SaveMethod"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">string</span>
+			<span class="var-name">$SaveMethod</span>
+						(line <span class="line-number">12</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Speichermethode (Formular oder JS)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodcopyXLImage" id="copyXLImage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method copyXLImage</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Eine kopie eines Files erstellen und die kopie nach dessen XL File benennen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			copyXLImage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFilename</span><span class="var-description">: sFilename, zu kopierendes Originalbild</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteFile" id="deleteFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method deleteFile</span> (line <span class="line-number">26</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein File löschen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteFile
+		</span>
+					(<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt des Medienmanagers</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">$Res</span><span class="var-description">: Res, Referenz zum Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFileList" id="getFileList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getFileList</span> (line <span class="line-number">52</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Files eines Element Ordners bekommen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array aller Files im Elementordner</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getFileList
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nElementID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nElementID</span><span class="var-description">: nElementID, ID des Elementes in der Datenbank</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetImagePath" id="getImagePath"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getImagePath</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bildpfad zurückgeben</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> gewünschter Dateiname ohne Basispfad</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getImagePath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$File</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$getXL</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$File</span><span class="var-description">: File, Bildpfad</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$getXL</span><span class="var-description">: getXL, angabe ob dessen XL File geholt werden soll</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetNonXLVersion" id="getNonXLVersion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getNonXLVersion</span> (line <span class="line-number">191</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Nicht XL Version eines XL Bildes bekommen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name des nicht-XL Bildes</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getNonXLVersion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFilename</span><span class="var-description">: sFilename, Bild dessen nicht-XL Version zu holen ist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSelectedFile" id="getSelectedFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getSelectedFile</span> (line <span class="line-number">142</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Aktuelles File herausfinden, damit es direkt selektiert wird.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name des selektierten Files</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectedFile
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$arrFiles</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$arrFiles</span><span class="var-description">: arrFiles, Array aller Files</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt des Medienmanagers</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetXLFileHtml" id="getXLFileHtml"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getXLFileHtml</span> (line <span class="line-number">264</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML für Toolbar zurückgeben, wenn ein XL File vorhanden ist</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> HTML Code für die Toolbar</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getXLFileHtml
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$File</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$File</span><span class="var-description">: File, Name des zu prüfenden Files</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Sprachressourcenobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetXLVersion" id="getXLVersion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getXLVersion</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XL Version eines Bild holen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name des XL Bildes</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getXLVersion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFilename</span><span class="var-description">: sFilename, Bild dessen XL Version zu holen ist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhasXLImage" id="hasXLImage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method hasXLImage</span> (line <span class="line-number">206</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Herausfinden, ob das betreffende Bild eine XL Version hat</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn es ein XL Bild gibt</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			hasXLImage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFilename</span><span class="var-description">: sFilename, zu prüfende Datei</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisImage" id="isImage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method isImage</span> (line <span class="line-number">323</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prüft ob es sich um ein Image handelt</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn es ein Bild ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isImage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, Name des zu prüfenden Bildes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisValidPath" id="isValidPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method isValidPath</span> (line <span class="line-number">249</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prüft ob der Pfad mit dem basepath (BP) beginnt.</p>
+<p class="description"><p>Um sicherzustellen, dass Fileoperationen funktionieren.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isValidPath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">1</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">1</span><span class="var-description">: True, wenn der Pfad in Ordnung ist</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFilename</span><span class="var-description">: sFilename, zu prüfender Bilderpfad</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisXLImage" id="isXLImage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method isXLImage</span> (line <span class="line-number">220</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Herausfinden, ob das Bild eine XL Version eines Bildes ist</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn es ein XL Bild ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isXLImage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFilename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFilename</span><span class="var-description">: sFilename, zu prüfende Datei</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsanitizeFilename" id="sanitizeFilename"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method sanitizeFilename</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filename flicken, wenn schwer verträgliche Zeichen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sanitizeFilename
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sName</span><span class="var-description">: sName, Name der zu sanitierenden Datei</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowFiles" id="showFiles"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showFiles</span> (line <span class="line-number">82</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Files anzeigen mit HTML code</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			showFiles
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$arrFiles</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>&nbsp;<span class="var-name">&$mediaInstance</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$arrFiles</span><span class="var-description">: arrFiles, Array der anzuzeigenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable für HTML Output</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/mediaInstance.html">mediaInstance</a></span>
+				<span class="var-name">&$mediaInstance</span><span class="var-description">: mediaInstance, Optionsobjekt des Medienmanagers</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowFlashFile" id="showFlashFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showFlashFile</span> (line <span class="line-number">382</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Flashfile als HTML mit Optionen anzeigen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn die Datei sichtbar ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			showFlashFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$File</span><span class="var-description">: File, Name de darzustellenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable in die HTML angehängt wird</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, Name des selektierten Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowFlashVideo" id="showFlashVideo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showFlashVideo</span> (line <span class="line-number">413</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Flashvideo als HTML mit Optionen anzeigen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn die Datei sichtbar ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			showFlashVideo
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$File</span><span class="var-description">: File, Name de darzustellenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable in die HTML angehängt wird</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, Name des selektierten Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowImageFile" id="showImageFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showImageFile</span> (line <span class="line-number">341</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Bild als HTML mit Optionen anzeigen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn die Datei sichtbar ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			showImageFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$File</span><span class="var-description">: File, Name de darzustellenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable in die HTML angehängt wird</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, Name des selektierten Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowMusicFile" id="showMusicFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showMusicFile</span> (line <span class="line-number">444</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Musikfile als HTML mit Optionen anzeigen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn die Datei sichtbar ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			showMusicFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$File</span><span class="var-description">: File, Name de darzustellenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable in die HTML angehängt wird</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, Name des selektierten Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowOtherFile" id="showOtherFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showOtherFile</span> (line <span class="line-number">505</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein anderes file als HTML und Icon anzeigen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn die Datei sichtbar ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			showOtherFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$File</span><span class="var-description">: File, Name de darzustellenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable in die HTML angehängt wird</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, Name des selektierten Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowVideoFile" id="showVideoFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method showVideoFile</span> (line <span class="line-number">475</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Videofile als HTML mit Optionen anzeigen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn die Datei sichtbar ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			showVideoFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$File</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSelected</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$File</span><span class="var-description">: File, Name de darzustellenden Files</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable in die HTML angehängt wird</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Referenz zum Sprachobject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSelected</span><span class="var-description">: sSelected, Name des selektierten Files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunzipFile" id="unzipFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method unzipFile</span> (line <span class="line-number">281</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Zip Archiv entpacken und ersten Fund zurückgeben</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name des letzten entpackten Files</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			unzipFile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sFolder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, zu entpackende Datei</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFolder</span><span class="var-description">: sFolder, Destinations Ordner</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="methodloadObjects" id="loadObjects"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadObjects</span> (line <span class="line-number">17</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Objekte laden, überschrieben von Mutterklasse</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadObjects
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></dt>
+						<dd>Definiert die zu ladenden Objekte.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../default/commonModule.html">commonModule</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../default/commonModule.html#method__construct">commonModule::__construct()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodcheckErrorSession">commonModule::checkErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodhasErrorSession">commonModule::hasErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodresetPaging">commonModule::resetPaging()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodsetErrorSession">commonModule::setErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodshowErrorSession">commonModule::showErrorSession()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:25 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

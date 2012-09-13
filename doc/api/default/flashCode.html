@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class flashCode</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class flashCode</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Bietet Code um Flash Dateien anzuzeigen.</p>
+<p class="description"><p>Unterstützt werden SWF, FLV und MP3 Dateien, während  die beiden letzteten im FLVPlayer eingebettet sind</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_mediaManager---flashCode.php.html">/mediaManager/flashCode.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getFlvPlayerCode" title="details" class="method-name">getFlvPlayerCode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$nWidth</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nHeight</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSkin</span>, <span class="var-type">strring</span>&nbsp;<span class="var-name">$sAlign</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getImageVersion" title="details" class="method-name">getImageVersion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getMp3PlayerCode" title="details" class="method-name">getMp3PlayerCode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nWidth</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSkin</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sAlign</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getSkin" title="details" class="method-name">getSkin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sSkin</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#getSwfCode" title="details" class="method-name">getSwfCode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$nWidth</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nHeight</span>, <span class="var-type">strring</span>&nbsp;<span class="var-name">$sAlign</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+									</div>
+								
+																																												</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodgetFlvPlayerCode" id="getFlvPlayerCode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getFlvPlayerCode</span> (line <span class="line-number">19</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Standard FLV Code erstellen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getFlvPlayerCode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$nWidth</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nHeight</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSkin</span>, <span class="var-type">strring</span>&nbsp;<span class="var-name">$sAlign</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, absoluter Pfad zum Videofile</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$nWidth</span><span class="var-description">: nWidth, Breite des Players</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nHeight</span><span class="var-description">: nHeight, Höhe des Players inkl. Controls</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSkin</span><span class="var-description">: sSkin, Aussehen des Players</span>			</li>
+					<li>
+				<span class="var-type">strring</span>
+				<span class="var-name">$sAlign</span><span class="var-description">: sAlign, 'right' oder 'left' umfliessend</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable für den HTML Output</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetImageVersion" id="getImageVersion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getImageVersion</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Image Hintergrundbild für Videofile holen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> PFad zum Hintergrundfile</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getImageVersion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, Videofile</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMp3PlayerCode" id="getMp3PlayerCode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getMp3PlayerCode</span> (line <span class="line-number">52</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Standard Mp3 Code erstellen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMp3PlayerCode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nWidth</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sSkin</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sAlign</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, Absoluter Pfad zur Musikdatei</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nWidth</span><span class="var-description">: nWidth, Breite des Players (Höhe fix)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSkin</span><span class="var-description">: sSkin, Aussehen des Players</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sAlign</span><span class="var-description">: sAlign, 'left' oder 'right' umfliessend</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable für HTML Output</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSkin" id="getSkin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getSkin</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Skins erstellen für FLV/MP3 Player.</p>
+<p class="description"><p>Vorhandene Skins: <ul><li>light, dark, silver, green</li><li>pink, pink2, lightblue, yellow,</li><li>darkred, darkgreen, darkblue</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSkin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sSkin</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sSkin</span><span class="var-description">: sSkin, Name des gewünschten Skins</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSwfCode" id="getSwfCode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getSwfCode</span> (line <span class="line-number">112</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Standard SWF Code erstellen</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSwfCode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$nWidth</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nHeight</span>, <span class="var-type">strring</span>&nbsp;<span class="var-name">$sAlign</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$out</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, absoluter Pfad zum Flashfile</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$nWidth</span><span class="var-description">: nWidth, Breite des Players</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nHeight</span><span class="var-description">: nHeight, Höhe des Players inkl. Controls</span>			</li>
+					<li>
+				<span class="var-type">strring</span>
+				<span class="var-name">$sAlign</span><span class="var-description">: sAlign, 'right' oder 'left' umfliessend</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$out</span><span class="var-description">: out, Variable für den HTML Output</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:25 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,22 @@
+<div class="cSALentry">
+    <h2 class="cSALentryH2">{ARTICLE_TITLE}</h2>
+    <div class="cSALentryImage">
+        <a href="{ARTICLE_LINK}" alt="{ARTICLE_TITLE}" title="{ARTICLE_TITLE}">
+        <img src="{ARTICLE_IMAGE_THUMB}" alt="{ARTICLE_TITLE}" title="{ARTICLE_TITLE}" /></a>
+    </div>
+    <div class="cSALentryPrice" id="ArtEntryPrice-{ARTICLE_ID}_Price">
+        {ARTICLE_PRICE} CHF
+    </div>
+    {ARTICLE_TIP}
+    {ARTICLE_NEW}
+    {ARTICLE_ACTION}
+    <p class="cSALentryText">
+        {ARTICLE_CONTENT_SHORT}
+        <a class="cSALentryLink" href="{ARTICLE_LINK}">mehr</a>
+    </p>
+    <div class="cSALentryCart">
+		{ARTICLE_SIZE_CONTROL}
+        <input type="text" value="1" name="articleCount" id="ArtEntryPrice-{ARTICLE_ID}_Count" class="cSALentryInput">
+        <input type="button" class="cButton" id="ArtEntryPrice-{ARTICLE_ID}_Submit" value="In den Warenkorb">
+    </div>
+</div>

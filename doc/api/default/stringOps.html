@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class stringOps</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class stringOps</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Methoden um Strings zu validieren/verarbeiten.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_stringOps---stringOps.php.html">/stringOps/stringOps.php</a> (line <span class="field">6</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ALPHA_FILES" title="details" class="const-name">ALPHA_FILES</a> = 					<span class="var-type"> '/[^a-z0-9\-\_]/i'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ALPHA_NUMERIC" title="details" class="const-name">ALPHA_NUMERIC</a> = 					<span class="var-type"> '/[^a-z0-9]/i'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#REGEX_EMAIL" title="details" class="const-name">REGEX_EMAIL</a> = 					<span class="var-type"> '/^[A-Za-z0-9\._\-+]+@[A-Za-z0-9_\-+]+(\.[A-Za-z0-9_\-+]+)+$/'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+									<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#alphaNumFiles" title="details" class="method-name">alphaNumFiles</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$Value</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#alphaNumOnly" title="details" class="method-name">alphaNumOnly</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$Value</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#checkDate" title="details" class="method-name">checkDate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sFormat</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#checkEmail" title="details" class="method-name">checkEmail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#checkURL" title="details" class="method-name">checkURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sUrl</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#chopString" title="details" class="method-name">chopString</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMax</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AddDots</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">integer</span>
+										<a href="#getBoolInt" title="details" class="method-name">getBoolInt</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$Value</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getExtension" title="details" class="method-name">getExtension</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getGetEscaped" title="details" class="method-name">getGetEscaped</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sQuery</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">integer</span>
+										<a href="#getPosInt" title="details" class="method-name">getPosInt</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$Value</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getPostEscaped" title="details" class="method-name">getPostEscaped</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sField</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#htmlEnt" title="details" class="method-name">htmlEnt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#htmlEntRev" title="details" class="method-name">htmlEntRev</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#htmlViewEnt" title="details" class="method-name">htmlViewEnt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#inRange" title="details" class="method-name">inRange</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMax</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMin</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#maxLength" title="details" class="method-name">maxLength</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMax</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#minLength" title="details" class="method-name">minLength</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMin</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#noHtml" title="details" class="method-name">noHtml</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+									</div>
+								
+																																																																																																																																																				</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodalphaNumFiles" id="alphaNumFiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method alphaNumFiles</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Aus gegebener Variable alle Zeichen entfernen.</p>
+<p class="description"><p>Entfernt wird alles ausser a-z0-9, während  Grossbuchstaben zu Kleinbuchstaben konvertiert werden.  Zudem sind &quot;-&quot; und &quot;_&quot; für Files erlaubt. Die  Dateiendung wird nicht validiert!</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			alphaNumFiles
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$Value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$Value</span><span class="var-description">: Value, Zu bearbeitender Dateiname</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodalphaNumOnly" id="alphaNumOnly"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method alphaNumOnly</span> (line <span class="line-number">133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Aus gegebener Variable alle Zeichen entfernen.</p>
+<p class="description"><p>Entfernt wird alles ausser a-z0-9, während  Grossbuchstaben zu Kleinbuchstaben konvertiert werden.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			alphaNumOnly
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$Value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$Value</span><span class="var-description">: Value, Zu bearbeitender String</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckDate" id="checkDate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method checkDate</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Datumseingabe anhand eines Regex checken.</p>
+<p class="description"><p>Die dateOps Klasse bietet diverse Regex-Konstanten  an um den sFormat Parameter auszufüllen.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn Datum dem gegebenen Format entspricht</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			checkDate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sFormat</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sString</span><span class="var-description">: sString, zu prüfendes Datum</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFormat</span><span class="var-description">: sFormat, Regex zur Prüfung</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckEmail" id="checkEmail"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method checkEmail</span> (line <span class="line-number">106</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Email Adresse validieren.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn Email Addresse korrekt ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			checkEmail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sString</span><span class="var-description">: sString, zu validierende Email Adresse</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckURL" id="checkURL"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method checkURL</span> (line <span class="line-number">119</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">URL validieren (http, https, ftp)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn URL ok ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			checkURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sUrl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sUrl</span><span class="var-description">: sUrl, zu prüfende URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodchopString" id="chopString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method chopString</span> (line <span class="line-number">77</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Max. länge prüfen und abschneiden wenn nötig.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			chopString
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMax</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AddDots</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sString</span><span class="var-description">: sString, zu prüfende Zeichenkette</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMax</span><span class="var-description">: nMax, maximale Länge des Strings</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$AddDots</span><span class="var-description">: AddDots, True für &quot;...&quot; abschneiden</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBoolInt" id="getBoolInt"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getBoolInt</span> (line <span class="line-number">219</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Integer als Boolean validieren (nur 0 / 1).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 1 oder 0, je nach Eingabe</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			getBoolInt
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$Value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$Value</span><span class="var-description">: Value, Zu validierender Wert</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetExtension" id="getExtension"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getExtension</span> (line <span class="line-number">245</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Extension eines Files zurückgeben inklusive . am Anfang</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Dateiendung mit Punkt</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getExtension
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFile</span><span class="var-description">: sFile, zu bearbeitendes File</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetGetEscaped" id="getGetEscaped"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getGetEscaped</span> (line <span class="line-number">171</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Feld aus einer URL holen und escapen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Escaped Wert</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getGetEscaped
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sQuery</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sQuery</span><span class="var-description">: sQuery, Name des zu holenden Parameters</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetPosInt" id="getPosInt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getPosInt</span> (line <span class="line-number">232</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Integer als Boolean validieren (nur 0 / 1).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 1 oder alles darunter (auch negative)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			getPosInt
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$Value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$Value</span><span class="var-description">: Value, Zu validierender Wert</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetPostEscaped" id="getPostEscaped"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getPostEscaped</span> (line <span class="line-number">159</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ein Feld aus einem Formular holen und escapen ($_POST).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Escaped Wert</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getPostEscaped
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sField</span>, <span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>&nbsp;<span class="var-name">&$Conn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sField</span><span class="var-description">: sField, Name des zu holenden Feldes</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/dbConn.html">dbConn</a></span>
+				<span class="var-name">&$Conn</span><span class="var-description">: Conn, Referenz zum Datenbankobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhtmlEnt" id="htmlEnt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method htmlEnt</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML kodieren, Wert wird für Ausgaben zurückgegeben.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Kodierter String</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			htmlEnt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sString</span><span class="var-description">: sString, Zu kodierender String</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhtmlEntRev" id="htmlEntRev"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method htmlEntRev</span> (line <span class="line-number">202</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML Entitäten rückkodieren (z.B. aus dem Editor)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			htmlEntRev
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sString</span><span class="var-description">: sString, zu kodierender String</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhtmlViewEnt" id="htmlViewEnt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method htmlViewEnt</span> (line <span class="line-number">193</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML enkodieren und rückkodieren der nur HTML werte.</p>
+<p class="description"><p>Gedacht für Kodierung von HTML Werten, damit diese  direkt in einer View angezeigt werden können.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			htmlViewEnt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sString</span><span class="var-description">: sString, Zu kodierender String</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinRange" id="inRange"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method inRange</span> (line <span class="line-number">62</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Maximale und minimale Länge eines Strsings prüfen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn String innert max/min ist</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			inRange
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMax</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMin</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sString</span><span class="var-description">: sString, zu prüfende Zeichenkette</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMax</span><span class="var-description">: nMax, maximale Länge</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMin</span><span class="var-description">: nMin, minimale Länge</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmaxLength" id="maxLength"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method maxLength</span> (line <span class="line-number">47</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Maximale Länge eines Strings prüfen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn Maximallänge überschritten</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			maxLength
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMax</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sString</span><span class="var-description">: sString, zu prüfende Zeichenkette</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMax</span><span class="var-description">: nMax, maximale Länge</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodminLength" id="minLength"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method minLength</span> (line <span class="line-number">33</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mindestlänge eines Strings prüfen</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True, wenn Minimallänge erreicht</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			minLength
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sString</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$nMin</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sString</span><span class="var-description">: sString, zu prüfende Zeichenkette</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMin</span><span class="var-description">: nMin, minimale Länge</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnoHtml" id="noHtml"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method noHtml</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alles was nach HTML Tags aussieht aus dem String entfernen.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			noHtml
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$sString</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$sString</span><span class="var-description">: sString, zu validierender String</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constALPHA_FILES" id="ALPHA_FILES"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ALPHA_FILES</span>
+			 = <span class="const-default"> '/[^a-z0-9\-\_]/i'</span>
+			(line <span class="line-number">25</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck der nur a-z und 0-9 erlaubt.</p>
+<p class="description"><p>Je nach Anwendung werden A-Z zu a-z konvertiert.  Weiterhin sind - und _ erlaubt (Für Files gedacht).</p></p>
+	
+	
+</div>
+<a name="constALPHA_NUMERIC" id="ALPHA_NUMERIC"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ALPHA_NUMERIC</span>
+			 = <span class="const-default"> '/[^a-z0-9]/i'</span>
+			(line <span class="line-number">18</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck der nur a-z und 0-9 erlaubt.</p>
+<p class="description"><p>Je nach Anwendung werden A-Z zu a-z konvertiert.</p></p>
+	
+	
+</div>
+<a name="constREGEX_EMAIL" id="REGEX_EMAIL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">REGEX_EMAIL</span>
+			 = <span class="const-default"> '/^[A-Za-z0-9\._\-+]+@[A-Za-z0-9_\-+]+(\.[A-Za-z0-9_\-+]+)+$/'</span>
+			(line <span class="line-number">12</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck um viele E-Mail Adressen zu validieren.</p>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:27 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

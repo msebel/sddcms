@@ -1,0 +1,26 @@
+<div class="cArtEntry">
+    <h2 class="cArtEntryH2">{ARTICLE_TITLE}</h2>
+    <div class="cArtEntryImage" id="divImagePresenter">
+        <img src="{ARTICLE_IMAGE_RESIZE}" alt="{ARTICLE_TITLE}" title="{ARTICLE_TITLE}" />
+    </div>
+    
+    <div class="cArtEntryPrice" id="ArtEntryPrice-{ARTICLE_ID}_Price">
+        {ARTICLE_PRICE} CHF
+    </div>
+    {ARTICLE_NEW}
+    <div class="cArtEntryImage" id="divImages">
+        {LIST_IMAGES}
+    </div>
+    <p class="cArtEntryText">
+        {ARTICLE_CONTENT}
+    </p>
+    {SUB_EXTENDED}
+    <div class="cArtEntryCart">
+		{ARTICLE_SIZE_CONTROL}
+        <input type="text" value="1" name="articleCount" id="ArtEntryPrice-{ARTICLE_ID}_Count" class="cArtEntryInput">
+        <input type="button" class="cButton" id="ArtEntryPrice-{ARTICLE_ID}_Submit" value="In den Warenkorb">
+    </div>
+	<script type="text/javascript">
+		new ArticleSizeController("cArticleSizeSelect");
+	</script>
+</div>

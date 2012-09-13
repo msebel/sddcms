@@ -1,0 +1,87 @@
+/* HTML Sample damit's klappt
+
+<ul class="mlddm" params="1,-1,500,slide,200,h">
+  <li><a href="#">Menu 1</a>
+    <ul>
+      <li><a href="#">Menu 1.1</a></li>
+      <li><a href="#">Menu 1.2</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a>
+    <ul>
+      <li><a href="#">Menu 3.1</a></li>
+      <li><a href="#">Menu 3.2</a>
+        <ul>
+          <li><a href="#">Menu 3.2.1</a></li>
+          <li><a href="#">Menu 3.2.2</a></li>
+          <li><a href="#">Menu 3.2.3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+*/
+
+
+/* Sample für horizontale Navigation */
+.mlddm {
+	visibility:hidden;
+	margin:0;
+	padding:0;
+	height:22px;
+	background-color:#A6BDA4;
+}
+.mlddm li {
+	display:inline;
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.mlddm li a, .mlddm li a#buttonnohover {
+	display:block;
+	margin:0;
+	padding:4px;
+	width:80px;
+	font:bold 11px arial;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	white-space:nowrap;
+	color:#596557;
+	background:#AABBAA;
+}
+.mlddm li a:hover, .mlddm li a#buttonhover {
+	background:#809040;
+	color:#FFF;
+}
+.mlddm ul {
+	z-index:100;
+	position:absolute;
+	visibility:hidden;
+	margin:1px 0 0 0;
+	padding:0;
+	background:#AABBAA;
+}
+.mlddm ul li {
+	float:none;
+}
+.mlddm ul li a {
+	display:block;
+	width:auto;
+	margin:0px;
+	padding:4px 13px;
+	font-weight:normal;
+	text-align:left;
+	text-transform:none;
+	color:#596557;
+	background:transparent;
+}
+.mlddm ul li a:hover {
+	color:#FFF;
+}
+
+/* Sample für vertical Navigation */
+.mlddm{position: absolute;visibility: hidden;margin: 0;padding: 0;background-color: #A6BDA4}.mlddm li{display: inline;list-style: none;margin: 0;padding: 0}.mlddm li a, .mlddm li a#buttonnohover{display: block;margin: 0;padding: 4px 15px;width: 100px;font: bold 11px arial;text-align: left;text-decoration: none;text-transform: uppercase;white-space: nowrap;color: #596557;background-color: #A6BDA4;border-bottom: 1px solid white}.mlddm li a:hover, .mlddm li a#buttonhover{background: #80927F;color: #FFF}.mlddm ul{z-index: 100;position: absolute;visibility: hidden;margin: 1px 0 0 0;padding: 0;background: #A6BDA4}.mlddm ul li{float: none}.mlddm ul li a{display: block;width: auto;margin: 0px;padding: 4px 13px;font-weight: normal;text-align: left;text-transform: none;color: #596557;background: transparent;border-width: 0}.mlddm ul li a:hover{color: #FFF}

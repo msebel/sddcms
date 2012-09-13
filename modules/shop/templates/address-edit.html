@@ -1,0 +1,55 @@
+<h1>Adresse {MODE}</h1>
+<p class="cShopError">{ERROR_MESSAGE}</p>
+<form method="post" action="/modules/shop/view/address.php?id={MENU_ID}&address={ADDRESS_ID}&type={TYPE}&save">
+	<table width="100%" cellpadding="2" cellspacing="0" border="0">
+		<tr>
+			<td width="120">Titel/Anrede:</td>
+			<td>
+				<input type="text" class="cInputShopLogin" name="sadTitle" value="{SAD_TITLE}" />
+			</td>
+		</tr>
+		<tr>
+			<td>Vorname <span class="red">*</span>:</td>
+			<td>
+				<input type="text" class="cInputShopLogin" name="sadFirstname" value="{SAD_FIRSTNAME}" />
+			</td>
+		</tr>
+		<tr>
+			<td>Nachname <span class="red">*</span>:</td>
+			<td>
+				<input type="text" class="cInputShopLogin" name="sadLastname" value="{SAD_LASTNAME}" />
+			</td>
+		</tr>
+		<tr>
+			<td>Strasse <span class="red">*</span>:</td>
+			<td>
+				<input type="text" class="cInputShopLogin" name="sadStreet" value="{SAD_STREET}" />
+			</td>
+		</tr>
+		<tr>
+			<td>PLZ/Ort <span class="red">*</span>:</td>
+			<td>
+				<input type="text" class="cInputShopLoginPlz" name="sadPlz" value="{SAD_PLZ}" />
+				<input type="text" class="cInputShopLoginCity" name="sadCity" value="{SAD_CITY}" />
+			</td>
+		</tr>
+		<tr>
+			<td>E-Mail <span class="red">*</span>:</td>
+			<td>
+				<input type="text" class="cInputShopLogin" name="sadEmail" value="{SAD_EMAIL}" />
+			</td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td>
+				<input type="text" class="cInputShopLogin" name="sadPhone" value="{SAD_PHONE}" />
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<input type="submit" name="cmdSave" value="Speichern" class="cButton" />
+			</td>
+		</tr>
+	</table>
+</form>

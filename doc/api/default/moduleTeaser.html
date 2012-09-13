@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class moduleTeaser</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class moduleTeaser</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Basisklasse für Admin/View Module.</p>
+<p class="description"><p>Für den standard Code von sddCMS. Für individuelle  Module ist die additionalModule Klasse (eingeschränkter) zu nutzen.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_library---teaser---teaser.php.html">/library/teaser/teaser.php</a> (line <span class="field">2</span>)
+		</p>
+		
+				
+		<pre><a href="../default/commonModule.html">commonModule</a>
+   |
+   --moduleTeaser</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addTeaserElement" title="details" class="method-name">addTeaserElement</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addTeaserSection" title="details" class="method-name">addTeaserSection</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#checkElementAccess" title="details" class="method-name">checkElementAccess</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTapID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#checkSectionAccess" title="details" class="method-name">checkSectionAccess</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#checkSectionElementMatch" title="details" class="method-name">checkSectionElementMatch</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTasID</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTapID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#deleteImportedTeaserElement" title="details" class="method-name">deleteImportedTeaserElement</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#deleteTeaserElement" title="details" class="method-name">deleteTeaserElement</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#deleteTeaserSection" title="details" class="method-name">deleteTeaserSection</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#doAdminRedirect" title="details" class="method-name">doAdminRedirect</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTapID</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTasID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getDeleteable" title="details" class="method-name">getDeleteable</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getEditable" title="details" class="method-name">getEditable</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$isImported</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getImportWindowHtml" title="details" class="method-name">getImportWindowHtml</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getTeaserDeleteHtml" title="details" class="method-name">getTeaserDeleteHtml</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$row</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getTypeOptions" title="details" class="method-name">getTypeOptions</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nType</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#importTeaserElement" title="details" class="method-name">importTeaserElement</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadObjects" title="details" class="method-name">loadObjects</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadTeaserElements" title="details" class="method-name">loadTeaserElements</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$sData</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadTeaserSections" title="details" class="method-name">loadTeaserSections</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$sData</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#saveTeaserElements" title="details" class="method-name">saveTeaserElements</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#saveTeaserSections" title="details" class="method-name">saveTeaserSections</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddTeaserElement" id="addTeaserElement"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addTeaserElement</span> (line <span class="line-number">33</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addTeaserElement
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddTeaserSection" id="addTeaserSection"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addTeaserSection</span> (line <span class="line-number">23</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addTeaserSection
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheckElementAccess" id="checkElementAccess"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkElementAccess</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkElementAccess
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTapID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTapID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckSectionAccess" id="checkSectionAccess"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkSectionAccess</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkSectionAccess
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckSectionElementMatch" id="checkSectionElementMatch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkSectionElementMatch</span> (line <span class="line-number">299</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkSectionElementMatch
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTasID</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTapID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTasID</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTapID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteImportedTeaserElement" id="deleteImportedTeaserElement"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteImportedTeaserElement</span> (line <span class="line-number">439</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteImportedTeaserElement
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteTeaserElement" id="deleteTeaserElement"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteTeaserElement</span> (line <span class="line-number">159</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteTeaserElement
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteTeaserSection" id="deleteTeaserSection"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteTeaserSection</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteTeaserSection
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddoAdminRedirect" id="doAdminRedirect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">doAdminRedirect</span> (line <span class="line-number">310</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doAdminRedirect
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTapID</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTasID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTapID</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTasID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDeleteable" id="getDeleteable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDeleteable</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getDeleteable
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetEditable" id="getEditable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEditable</span> (line <span class="line-number">246</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getEditable
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$isImported</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Data</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$isImported</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetImportWindowHtml" id="getImportWindowHtml"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getImportWindowHtml</span> (line <span class="line-number">336</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getImportWindowHtml
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTeaserDeleteHtml" id="getTeaserDeleteHtml"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTeaserDeleteHtml</span> (line <span class="line-number">419</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getTeaserDeleteHtml
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$row</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$row</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetTypeOptions" id="getTypeOptions"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTypeOptions</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getTypeOptions
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodimportTeaserElement" id="importTeaserElement"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">importTeaserElement</span> (line <span class="line-number">393</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			importTeaserElement
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadObjects" id="loadObjects"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadObjects</span> (line <span class="line-number">17</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadObjects
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></dt>
+						<dd>Definiert die zu ladenden Objekte.</dd>
+					</dl>
+			
+	</div>
+<a name="methodloadTeaserElements" id="loadTeaserElements"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadTeaserElements</span> (line <span class="line-number">212</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadTeaserElements
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$sData</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$sData</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadTeaserSections" id="loadTeaserSections"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadTeaserSections</span> (line <span class="line-number">195</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadTeaserSections
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$sData</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$sData</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveTeaserElements" id="saveTeaserElements"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveTeaserElements</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			saveTeaserElements
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nTeaserID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nTeaserID</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveTeaserSections" id="saveTeaserSections"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveTeaserSections</span> (line <span class="line-number">60</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			saveTeaserSections
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../default/commonModule.html">commonModule</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../default/commonModule.html#method__construct">commonModule::__construct()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodcheckErrorSession">commonModule::checkErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodhasErrorSession">commonModule::hasErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodloadObjects">commonModule::loadObjects()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodresetPaging">commonModule::resetPaging()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodsetErrorSession">commonModule::setErrorSession()</a></span><br>
+													<span class="method-name"><a href="../default/commonModule.html#methodshowErrorSession">commonModule::showErrorSession()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:40:03 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class dateOps</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class dateOps</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Klasse die verschiedene Datumsoperationen zur Verfügung stellt.</p>
+<p class="description"><p>Dazu gehören Check und EU / SQL Konvertierungsfunktionen sowie  Konstanten für Formatierungen und Reguläre ausdrücke</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Michael Sebel &lt;<a href="mailto:michael@sebel.ch">michael@sebel.ch</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_dateOps---dateOps.php.html">/dateOps/dateOps.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_CLOCK" title="details" class="const-name">EU_CLOCK</a> = 					<span class="var-type"> 'H:i'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_DATE" title="details" class="const-name">EU_DATE</a> = 					<span class="var-type"> 'd.m.Y'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_DATETIME" title="details" class="const-name">EU_DATETIME</a> = 					<span class="var-type"> 'd.m.Y H:i:s'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_FORMAT_DATE" title="details" class="const-name">EU_FORMAT_DATE</a> = 					<span class="var-type"> '/^(([012][0-9])|(3[01])).((0[1-9])|(1[0-2])).(((19[0-9])|(20[0-9]))[0-9])$/'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_FORMAT_DATETIME" title="details" class="const-name">EU_FORMAT_DATETIME</a> = 					<span class="var-type"> '/^(([012][0-9])|(3[01])).((0[1-9])|(1[0-2])).(((19[0-9])|(20[0-9]))[0-9]) (([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_FORMAT_TIME" title="details" class="const-name">EU_FORMAT_TIME</a> = 					<span class="var-type"> '/^(([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EU_TIME" title="details" class="const-name">EU_TIME</a> = 					<span class="var-type"> 'H:i:s'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#RFC822_DATE" title="details" class="const-name">RFC822_DATE</a> = 					<span class="var-type"> 'D, d M Y H:i:s e'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#SQL_DATE" title="details" class="const-name">SQL_DATE</a> = 					<span class="var-type"> 'Y-m-d'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#SQL_DATETIME" title="details" class="const-name">SQL_DATETIME</a> = 					<span class="var-type"> 'Y-m-d H:i:s'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#SQL_FORMAT_DATE" title="details" class="const-name">SQL_FORMAT_DATE</a> = 					<span class="var-type"> '/^(((19[0-9])|(20[0-9]))[0-9])-((0[1-9])|(1[0-2]))-(([012][0-9])|(3[01]))$/'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#SQL_FORMAT_DATETIME" title="details" class="const-name">SQL_FORMAT_DATETIME</a> = 					<span class="var-type"> '/^(((19[0-9])|(20[0-9]))[0-9])-((0[1-9])|(1[0-2]))-(([012][0-9])|(3[01])) (([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#SQL_FORMAT_TIME" title="details" class="const-name">SQL_FORMAT_TIME</a> = 					<span class="var-type"> '/^(([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+									<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#convertDate" title="details" class="method-name">convertDate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFrom</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sTo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDate</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getDayOfWeek" title="details" class="method-name">getDayOfWeek</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">integer</span>
+										<a href="#getDayOfWeekNumeric" title="details" class="method-name">getDayOfWeekNumeric</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getDayOfWeekShort" title="details" class="method-name">getDayOfWeekShort</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">integer</span>
+										<a href="#getDayOfYear" title="details" class="method-name">getDayOfYear</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getMonthName" title="details" class="method-name">getMonthName</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMonth</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">integer</span>
+										<a href="#getStamp" title="details" class="method-name">getStamp</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFormat</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDate</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getTime" title="details" class="method-name">getTime</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFormat</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$vTime</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getWeekday" title="details" class="method-name">getWeekday</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nWeekday</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getWeekdayShort" title="details" class="method-name">getWeekdayShort</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nWeekday</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">integer</span>
+										<a href="#setTime" title="details" class="method-name">setTime</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$vTime</span>)
+									</div>
+								
+																																																																																												</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodconvertDate" id="convertDate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method convertDate</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formatiert das Datum $sDate von $sFrom nach $sTo.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Konvertiertes Datum im Ausgangsformat</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			convertDate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFrom</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sTo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFrom</span><span class="var-description">: sFrom, Eingangsformat</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sTo</span><span class="var-description">: sTo, Ausgangsformat</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sDate</span><span class="var-description">: sDate, zu konvertierendes Datum im Eingangsformat</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDayOfWeek" id="getDayOfWeek"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getDayOfWeek</span> (line <span class="line-number">200</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mehrsprachiger Wochentag eines Timestamps.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Wochentag als String (lang)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDayOfWeek
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nStamp</span><span class="var-description">: nStamp, zu übergebenes Timestamp</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDayOfWeekNumeric" id="getDayOfWeekNumeric"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getDayOfWeekNumeric</span> (line <span class="line-number">187</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Tag der Woche als Zahl, nicht nullbasiert.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Tag der Woche, 1 = Montag, 7 = Sonntag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			getDayOfWeekNumeric
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nStamp</span><span class="var-description">: nStamp, Zeitstempfel dessen Tag herausgefunden werden muss</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDayOfWeekShort" id="getDayOfWeekShort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getDayOfWeekShort</span> (line <span class="line-number">214</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mehrsprachiger Wochentag eines Timestamps.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Wochentag als String (kurz)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDayOfWeekShort
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nStamp</span><span class="var-description">: nStamp, zu übergebenes Timestamp</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDayOfYear" id="getDayOfYear"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getDayOfYear</span> (line <span class="line-number">176</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Tag des Jahres als Zahl, nicht nullbasiert.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Tag des Jahres 1 - 365 (366)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			getDayOfYear
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nStamp</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nStamp</span><span class="var-description">: nStamp, Zeitstempfel dessen Tag herausgefunden werden muss</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMonthName" id="getMonthName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getMonthName</span> (line <span class="line-number">270</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mehrsprachigen Monat (langer Name) zurückgeben</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name des gewünschten Monats</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMonthName
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nMonth</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nMonth</span><span class="var-description">: nMonth, Monatsnummer 1 - 12</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetStamp" id="getStamp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getStamp</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gibt anhand der Formatierung den Timestamp eines Datums zurück</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Timestamp des gegebenen Datums</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			getStamp
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFormat</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFormat</span><span class="var-description">: sFormat, Formatierung des eingegebenen Datum</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sDate</span><span class="var-description">: sDate, Zu konvertierendes Datum</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetTime" id="getTime"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getTime</span> (line <span class="line-number">96</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formatiert einen Timestamp oder aktuelle Zeit anhand $sFormat</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Formatiertes Datum</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getTime
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sFormat</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$vTime</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sFormat</span><span class="var-description">: sFormat, Formatierung für date Funktion</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$vTime</span><span class="var-description">: vTime, Timestamp darf auch NULL sein für aktuelle Zeit</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetWeekday" id="getWeekday"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getWeekday</span> (line <span class="line-number">228</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Anhand des Wochentages (1-7) dessen langer Name holen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Übersetzter Wochentag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getWeekday
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nWeekday</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nWeekday</span><span class="var-description">: nWeekday, Wochentag 1 (Montag) - 7 (Sonntag)</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetWeekdayShort" id="getWeekdayShort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getWeekdayShort</span> (line <span class="line-number">249</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Anhand des Wochentages (1-7) dessen Abkürzung holen.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Übersetzter Wochentag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getWeekdayShort
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$nWeekday</span>, <span class="var-type"><a href="../default/resources.html">resources</a></span>&nbsp;<span class="var-name">&$Res</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$nWeekday</span><span class="var-description">: nWeekday, Wochentag 1 (Montag) - 7 (Sonntag)</span>			</li>
+					<li>
+				<span class="var-type"><a href="../default/resources.html">resources</a></span>
+				<span class="var-name">&$Res</span><span class="var-description">: Res, Sprachobjekt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTime" id="setTime"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method setTime</span> (line <span class="line-number">83</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validiert Zeit eingaben.</p>
+<p class="description"><p>Nimmt einen Wert und gibt Ihn zurück. Es kommt die aktuelle  Zeit, wenn ein ungültiger Wert (NULL) daher kommt.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Aktuelle Zeit, wenn gegebene ungültig</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			setTime
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$vTime</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$vTime</span><span class="var-description">: vTime, eingegebene Zeit</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constEU_CLOCK" id="EU_CLOCK"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_CLOCK</span>
+			 = <span class="const-default"> 'H:i'</span>
+			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp EU Weckeranzeige (exkl. Sekunden)</p>
+	
+	
+</div>
+<a name="constEU_DATE" id="EU_DATE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_DATE</span>
+			 = <span class="const-default"> 'd.m.Y'</span>
+			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp EU Date</p>
+	
+	
+</div>
+<a name="constEU_DATETIME" id="EU_DATETIME"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_DATETIME</span>
+			 = <span class="const-default"> 'd.m.Y H:i:s'</span>
+			(line <span class="line-number">24</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp EU Datetime</p>
+	
+	
+</div>
+<a name="constEU_FORMAT_DATE" id="EU_FORMAT_DATE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_FORMAT_DATE</span>
+			 = <span class="const-default"> '/^(([012][0-9])|(3[01])).((0[1-9])|(1[0-2])).(((19[0-9])|(20[0-9]))[0-9])$/'</span>
+			(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck für Checks auf Datum (dd.mm.yyyy)</p>
+	
+	
+</div>
+<a name="constEU_FORMAT_DATETIME" id="EU_FORMAT_DATETIME"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_FORMAT_DATETIME</span>
+			 = <span class="const-default"> '/^(([012][0-9])|(3[01])).((0[1-9])|(1[0-2])).(((19[0-9])|(20[0-9]))[0-9]) (([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+			(line <span class="line-number">59</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck für Checks auf Datum (dd.mm.yyyy hh:mm:ss)</p>
+	
+	
+</div>
+<a name="constEU_FORMAT_TIME" id="EU_FORMAT_TIME"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_FORMAT_TIME</span>
+			 = <span class="const-default"> '/^(([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+			(line <span class="line-number">54</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck für Checks auf Zeit (hh:mm:ss)</p>
+	
+	
+</div>
+<a name="constEU_TIME" id="EU_TIME"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EU_TIME</span>
+			 = <span class="const-default"> 'H:i:s'</span>
+			(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp EU Zeit (inkl. Sekunden)</p>
+	
+	
+</div>
+<a name="constRFC822_DATE" id="RFC822_DATE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">RFC822_DATE</span>
+			 = <span class="const-default"> 'D, d M Y H:i:s e'</span>
+			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp für ein korrektes Datum nach RFC 822</p>
+	
+	
+</div>
+<a name="constSQL_DATE" id="SQL_DATE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">SQL_DATE</span>
+			 = <span class="const-default"> 'Y-m-d'</span>
+			(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp SQL Date</p>
+	
+	
+</div>
+<a name="constSQL_DATETIME" id="SQL_DATETIME"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">SQL_DATETIME</span>
+			 = <span class="const-default"> 'Y-m-d H:i:s'</span>
+			(line <span class="line-number">14</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formattyp SQL Datetime</p>
+	
+	
+</div>
+<a name="constSQL_FORMAT_DATE" id="SQL_FORMAT_DATE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">SQL_FORMAT_DATE</span>
+			 = <span class="const-default"> '/^(((19[0-9])|(20[0-9]))[0-9])-((0[1-9])|(1[0-2]))-(([012][0-9])|(3[01]))$/'</span>
+			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck für Checks auf SQL Datum (dd-mm-yyyy)</p>
+	
+	
+</div>
+<a name="constSQL_FORMAT_DATETIME" id="SQL_FORMAT_DATETIME"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">SQL_FORMAT_DATETIME</span>
+			 = <span class="const-default"> '/^(((19[0-9])|(20[0-9]))[0-9])-((0[1-9])|(1[0-2]))-(([012][0-9])|(3[01])) (([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+			(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck für Checks auf SQL Datum (dd-mm-yyyy hh:mm:ss)</p>
+	
+	
+</div>
+<a name="constSQL_FORMAT_TIME" id="SQL_FORMAT_TIME"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">SQL_FORMAT_TIME</span>
+			 = <span class="const-default"> '/^(([0-1]{1}[0-9]{1}|[2]{1}[0-3]{1})[:]{1}[0-5]{1}[0-9]{1}[:]{1}[0-5]{1}[0-9]{1})$/'</span>
+			(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regulärer Ausdruck für Checks auf SQL Zeit (hh:mm:ss)</p>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2009 21:58:25 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

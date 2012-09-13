@@ -1,0 +1,15 @@
+<h1>Suchergebnisse</h1>
+<p class="cSearchPhrase">
+    Ihre Suche nach "<strong>{SEARCH_TERM}</strong>" erzielte folgende Ergebnisse:
+</p>
+{LIST_SEARCHRESULT}
+<div class="cStartArticleSearch">
+    <h2>Weitere Artikel suchen</h2>
+    <form action="{SEARCH_LINK}" method="post">
+        <input type="text" name="search" class="cStartSearchField">
+        <input type="submit" name="cmdSearch" value="Suchen" class="cButton">
+    </form>
+</div>
+<script type="text/javascript">
+	new ArticleSizeController("cArticleSizeSelect");
+</script>

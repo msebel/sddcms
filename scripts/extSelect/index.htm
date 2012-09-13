@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" href="extSelect.css">
+<script type="text/javascript" language="javascript" src="extSelect.js"></script>
+</head>
+<body>
+
+<form name="myForm" action="index.htm" method="post">
+	<script type="text/javascript">
+		// Extended Selectbox Optionen erstellen
+		var options = new Array(
+			new selectOption(1,'Phak'),
+			new selectOption(2,'Pseudophak'),
+			new selectOption(3,'AMD'),
+			new selectOption(9,'Diabetes'),
+			new selectOption(12,'Blindheit')
+		);
+		// Extenden Selectbox erstellen
+		newSelector('selector1',options,true,true,5,'Keine','Andere');
+	</script>
+</form>
+
+</body>
+</html>

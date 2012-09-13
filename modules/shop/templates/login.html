@@ -1,0 +1,89 @@
+<h1>Login</h1>
+<h2>Bestehende Kunden</h2>
+<p>
+	Wenn Sie bereits ein Konto besitzen können Sie sich hier einloggen und
+	mit dem Einkaufen ohne Adresseingabe fortfahren.
+</p>
+<form action="/modules/shop/view/payment.php?id={MENU_ID}" method="post">
+	<table width="100%" cellpadding="3" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2"><span class="cShopError">{LOGIN_MESSAGE}</span></td>
+		</tr>
+		<tr>
+			<td width="120">E-Mail Adresse:</td>
+			<td>
+				<input type="text" name="shopUserEmail" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">Passwort:</td>
+			<td>
+				<input type="password" name="shopUserPassword" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">&nbsp;</td>
+			<td>
+				<input type="submit" name="login" value="Anmelden und fortfahren" class="cButton">
+				<a href="/modules/shop/view/lostpwd.php?id={MENU_ID}">Passwort vergessen?</a>
+			</td>
+		</tr>
+	</table>
+</form>
+<br>
+<h2>Neue Kunden</h2>
+<p>
+	Wenn Sie noch kein Konto besitzen können Sie hier Ihre Daten direkt eingeben
+	und mit dem Einkaufen fortfahren. Sie bekommen anschliessend eine E-Mail mit
+	Ihren Benutzerdaten, welche Sie beim nächsten mal verwenden können.
+</p>
+<form action="/modules/shop/view/payment.php?id={MENU_ID}" method="post">
+	<table width="100%" cellpadding="3" cellspacing="0" border="0">
+		<tr>
+			<td colspan="2"><span class="cShopError">{REGISTER_MESSAGE}</span></td>
+		</tr>
+		<tr>
+			<td width="120">E-Mail Adresse:</td>
+			<td>
+				<input type="text" name="shopUserEmail" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">Vorname:</td>
+			<td>
+				<input type="text" name="shopUserFirstname" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">Nachname:</td>
+			<td>
+				<input type="text" name="shopUserLastname" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">Strasse:</td>
+			<td>
+				<input type="text" name="shopUserStreet" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">PLZ/Ort:</td>
+			<td>
+				<input type="text" name="shopUserPlz" class="cInputShopLoginPlz">
+				<input type="text" name="shopUserCity" class="cInputShopLoginCity">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">Postfach/Zusatz:</td>
+			<td>
+				<input type="text" name="shopUserTile" class="cInputShopLogin">
+			</td>
+		</tr>
+		<tr>
+			<td width="120">&nbsp;</td>
+			<td>
+				<input type="submit" name="register" value="Speichern und fortfahren" class="cButton">
+			</td>
+		</tr>
+	</table>
+</form>

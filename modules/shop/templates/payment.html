@@ -1,0 +1,35 @@
+<h1>Bezahlmethode</h1>
+<p>
+	Wählen Sie nachfolgend die Art der Bezahlung aus:
+</p>
+<form action="/modules/shop/view/payment.php?id={MENU_ID}" method="post">
+	<span class="cShopError">{ERROR_MESSAGE}</span>
+	{PAYMENT_TYPES}
+	<h2>Rechnungsadresse</h2>
+	<p>
+		Nachfolgend können Sie aus Ihren eingegebenen Daten die Rechnungs und
+		Lieferadresse auswählen. Klicken sie <a href="user.php?id={MENU_ID}">hier</a>
+		um neue Adressen zu erfassen.
+	</p>
+	<p>
+	{BILLING_ADDRESSES}
+	</p>
+	<h2>Lieferadresse</h2>
+	<p>
+	{DELIVERY_ADDRESSES}
+	</p>
+    <h2>Mitteilung</h2>
+    <p>
+        Falls Sie irgend ein Anliegen haben, können Sie uns dies hier mitteilen:
+    </p>
+    <textarea name="shoMessage" class="shop-message" rows="5" cols="60"></textarea>
+	<p>
+		{AGB_CHECKBOX}
+	</p>
+	<br>
+	<div id="paymentMenuButtons">
+		<input type="submit" name="back" value="Zurück" class="cButton" id="paymentMenuBackButton">
+		<input type="submit" name="refresh" value="Aktualisieren" class="cButton" id="paymentMenuRefreshButton">
+		<input type="submit" name="confirm" value="Bestellung Abschliessen" class="cButton" id="paymentMenuConfirmButton">
+	</div>
+</form>
